@@ -1,0 +1,222 @@
+/*lets have a fresh start*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {	margin: 0; padding: 0; position: relative; text-decoration: none; }
+
+/*I need my clearfix*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+/*fonts*/
+h1 {
+	font-family: "chaparral-pro",sans-serif;
+	color: #444342;
+	font-size: 3em;
+	font-weight: 400;
+	letter-spacing: .4em;
+	line-height: 1.5em;
+}
+
+h3 {
+	font-family: "brandon-grotesque",sans-serif;
+	color: white;
+	font-weight: 300;
+	font-size: 1.3em;
+	letter-spacing: .3em;
+	line-height: 0.9em;
+}
+
+h2, h2 a {
+	font-family: "brandon-grotesque",sans-serif;
+	color: #444342;
+	font-size: 1.8em;
+	font-weight: 400;
+	line-height: 1.1em;
+}
+
+h4{
+	font-family: "brandon-grotesque",sans-serif;
+	color: #444342;
+	font-weight: 300;
+	font-size: 1.3em;
+	margin-left: 2%;
+}
+
+p {
+	font-family: "brandon-grotesque",sans-serif;
+	color: #444342;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+p a {
+	color: #FF507E;
+	border-bottom: 1px dashed white;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+p a:hover {
+	color: white;
+	border-bottom: none;
+}
+
+p a:active {
+	color: #FCF690;
+	border-bottom:none;
+	-webkit-transition: none;
+	-moz-transition:none;
+	-o-transition: none;
+	transition:none;
+}
+
+
+/*banner*/
+.banner {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	background: url('/img/index/banner.jpg') no-repeat center;
+	background: #DEDAD3;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+.banner .wrapper{
+	zoom: 1;
+	width: 100%;
+	max-width: 1294px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+
+/*intro*/
+.intro {
+	min-height: 300px;
+	width: 80%;
+	max-width: 500px;
+	display: inline-block;
+	margin: 7% 0 0 4%;
+	text-align: center;
+}
+
+.logo {
+	background: url('/img/index/logo.png') no-repeat center;
+	background-size: 60px;
+	height: 100px;
+	width: 100px;
+	z-index: 200;
+	margin: auto;
+}
+
+/*triangle*/
+.top-triangle {
+	position:fixed;
+	z-index: 100;
+	bottom: 0px;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 30px 35px 30px;
+	border-color: transparent transparent #DEDAD3 transparent;
+}
+
+.top-triangle a {
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #DEDAD3;
+	text-align: center;
+	margin-top: 14px;
+	margin-left: -12px;
+	z-index: 200;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.top-triangle a:hover {
+	color: white;
+}
+
+/*sections*/
+.project {
+	padding: 48px 0;
+	position: relative;
+	display:block;
+	border-top: 10px solid #FFFFFF;
+	border-bottom: 10px solid #FFFFFF;
+	border-right: 13px solid #FFFFFF;
+	border-left: 13px solid #FFFFFF;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+.wrapper{
+	zoom: 1;
+	width: 100%;
+	max-width: 1048px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.project:hover {
+	background: #DEFFF9;
+	border-top: 10px solid #C9FFF9;
+	border-bottom: 10px solid #C9FFF9;
+	border-right: 13px solid #B3FFF6;
+	border-left: 13px solid #B3FFF6;
+}
+
+.proj-title {
+	width: 46%;
+	float: left;
+	margin-right: 7%;
+	display: inline-block;
+}
+
+.proj-image {
+	margin-right: 0;
+	margin-bottom: 25px;
+	width: 46%;
+	height: 46%;
+	display: inline-block;
+	border-radius: 3px;
+	z-index: 10;
+}
+
+.proj-image img{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 5px;
+}
+
+.project-link {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	border-bottom: 0 none;
+}
+
+
