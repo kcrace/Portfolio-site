@@ -159,10 +159,10 @@ p a:active {
 	padding: 48px 0;
 	position: relative;
 	display:block;
-	border-top: 10px solid #FFFFFF;
+/*	border-top: 10px solid #FFFFFF;
 	border-bottom: 10px solid #FFFFFF;
 	border-right: 13px solid #FFFFFF;
-	border-left: 13px solid #FFFFFF;
+	border-left: 13px solid #FFFFFF;*/
 	-webkit-transition: all 0.7s ease;
 	-moz-transition: all 0.7s ease;
 	-ms-transition: all 0.7s ease;
@@ -179,10 +179,10 @@ p a:active {
 
 .project:hover {
 	background: #DEFFF9;
-	border-top: 10px solid #C9FFF9;
+/*	border-top: 10px solid #C9FFF9;
 	border-bottom: 10px solid #C9FFF9;
 	border-right: 13px solid #B3FFF6;
-	border-left: 13px solid #B3FFF6;
+	border-left: 13px solid #B3FFF6;*/
 }
 
 .proj-title {
@@ -217,6 +217,60 @@ p a:active {
 	height: 100%;
 	z-index: 0;
 	border-bottom: 0 none;
+}
+
+/*like media queries, duh*/
+
+/*iphone*/
+@media screen and (max-width: 480px){
+	.banner,
+	.wrapper,
+	.intro,
+	.project,
+	.proj-title,
+	.proj-image {
+		display: block;
+		max-width: 100%;
+		margin: auto;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	p {
+		font-size: .9em;
+	}
+
+	h2, h2 a {
+		font-size: 1.3em;
+		margin: auto;
+	}
+
+	h4 {
+		font-size: 0em;
+		margin: auto;
+	}
+
+	.proj-title {
+		text-align: center;
+		float: none;
+		padding: 7px 0 10px 0;
+	}
+
+	.proj-image {
+		width: 80%;
+		height: 80%;
+	}
+
+	.project {
+		padding: 10px 0;
+		border-bottom: 9px solid #DEFFF9; 
+	}
 }
 
 
