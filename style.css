@@ -154,8 +154,12 @@ p a:active {
 	color: white;
 }
 
+.top-triangle a:active {
+	color: white;
+}
+
 /*sections*/
-.project {
+.project-even, .project-odd {
 	padding: 48px 0;
 	position: relative;
 	display:block;
@@ -177,12 +181,24 @@ p a:active {
 	padding: 0 20px;
 }
 
-.project:hover {
+.project-odd:hover {
 	background: #DEFFF9;
 /*	border-top: 10px solid #C9FFF9;
 	border-bottom: 10px solid #C9FFF9;
 	border-right: 13px solid #B3FFF6;
 	border-left: 13px solid #B3FFF6;*/
+}
+
+.project-even:hover {
+	background: #DEFFF9;
+}
+
+.project-even:active {
+	background: #B3FFE0;
+}
+
+.project-odd:active {
+	background: #B3FFE0;
 }
 
 .proj-title {
@@ -267,9 +283,16 @@ p a:active {
 		height: 80%;
 	}
 
-	.project {
-		padding: 10px 0;
-		border-bottom: 9px solid #DEFFF9; 
+	.project-even, .project-odd {
+		padding: 10px 0 20px; 
+	}
+
+	.project-even {
+		background: #DEFFF9;
+	}
+
+	.top-triangle a {
+		color: white;
 	}
 }
 
