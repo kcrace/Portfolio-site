@@ -42,10 +42,6 @@ h4 {
     background-size: cover;
 }
 
-footer {
-  height: 30px;
-}
-
 .project-banner .wrapper{
   zoom: 1;
   width: 97%;
@@ -99,7 +95,7 @@ footer {
 
 .project-third {
   text-align: center;
-  background: #BEFFF2;
+  background: #FFFFFF;
 }
 
 .project-third .proj-image {
@@ -113,6 +109,30 @@ footer {
 
 
 /*like media queries, duh*/
+
+@media screen and (max-width: 764px){
+  h2 {
+    font-size: 2.3em;
+  }
+
+  .project-second .proj-title {
+    width: 98%;
+    margin: auto;
+    float: none;
+    text-align: left;
+  }
+
+  .project-second .proj-image {
+    width: 98%;
+    margin: 20px auto 0;
+    float: none;
+  }  
+
+  .project-second, .project-third {
+    padding: 35px 0;
+  }
+
+}
 
 /*iphone*/
 @media screen and (max-width: 480px){
@@ -141,25 +161,12 @@ footer {
     display: none;
   }
 
-  .project-second .proj-title {
-    width: 98%;
-    margin: auto;
-    float: none;
-    text-align: left;
-  }
-
   .project-second .proj-image {
-    width: 98%;
     margin: 10px auto 0;
-    float: none;
-  }
-
-  .project-second, .project-third {
-    padding: 35px 0;
   }
 
   .project-third .proj-image {
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
 
