@@ -106,7 +106,7 @@ p a:active {
 	width: 80%;
 	max-width: 500px;
 	display: inline-block;
-	margin: 7% 0 0 4%;
+	margin: 4% 0 0 4%;
 	text-align: center;
 }
 
@@ -124,8 +124,8 @@ p a:active {
 	position:fixed;
 	z-index: 100;
 	bottom: 0px;
-	margin-left: 1%;
-	margin-bottom: 1%;
+	margin-left: 2%;
+	margin-bottom: 2%;
 	width: 0px;
 	height: 0px;
 	border-style: solid;
@@ -194,11 +194,11 @@ p a:active {
 }
 
 .project-even:active {
-	background: #B3FFE0;
+	background: #FCF690;
 }
 
 .project-odd:active {
-	background: #B3FFE0;
+	background: #FCF690;
 }
 
 .proj-title {
@@ -209,8 +209,6 @@ p a:active {
 }
 
 .proj-image {
-	margin-right: 0;
-	margin-bottom: 25px;
 	width: 46%;
 	height: 46%;
 	display: inline-block;
@@ -259,7 +257,7 @@ p a:active {
 	}
 
 	p {
-		font-size: .9em;
+		font-size: 1em;
 	}
 
 	h2, h2 a {

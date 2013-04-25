@@ -1,0 +1,174 @@
+/*lets have a fresh start*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* { margin: 0; padding: 0; position: relative; text-decoration: none; }
+
+/*I need my clearfix*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+/*fonts*/
+
+h2 {
+  font-size: 4em;
+  font-family: "chaparral-pro",sans-serif;
+}
+
+.project-second h2 {
+  font-size: 2.5em;
+  font-family: "brandon-grotesque",sans-serif;
+}
+
+h4 {
+  color: #FFFFFF;
+  line-height: 1.7em;
+  margin-left: 2%;
+  font-size: 1.7em;
+}
+
+/*banner*/
+.project-banner {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: #DEDAD3;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer {
+  height: 30px;
+}
+
+.project-banner .wrapper{
+  zoom: 1;
+  width: 97%;
+  max-width: 1294px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+
+.back-arrow {
+  background: url('/img/project/back-arrow.png') no-repeat center;
+  background-size: 100%;
+  height: 80px;
+  width: 10%;
+  max-width: 100px;
+  min-width: 60px;
+  z-index: 200;
+  margin-right: 3%;
+  display: inline-block;
+}
+
+.title {
+  display: inline-block;
+}
+
+.project-main, .project-second, .project-third {
+  padding: 48px 0;
+}
+
+.project-main .proj-image {
+  width: 100%;
+  text-align: center;
+}
+
+.project-main .wrapper {
+  text-align: center;
+}
+
+.project-second {
+  background: #DEFFF9;
+}
+
+.project-second .proj-title {
+  width: 28%;
+}
+
+.project-second .proj-image {
+  width: 65%;
+  float: right;
+}
+
+.project-third {
+  text-align: center;
+  background: #BEFFF2;
+}
+
+.project-third .proj-image {
+  width: 30%;
+  margin: 0 1%;
+}
+
+.project-third .wrapper {
+  padding: 0px;
+}
+
+
+/*like media queries, duh*/
+
+/*iphone*/
+@media screen and (max-width: 480px){
+
+  header .project-banner {
+    height: 80px;
+  }
+
+  footer {
+  height: 15px;
+  }
+
+  .back-arrow {
+    height: 50px;
+  }
+
+  .title {
+    vertical-align: 13px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    display: none;
+  }
+
+  .project-second .proj-title {
+    width: 98%;
+    margin: auto;
+    float: none;
+    text-align: left;
+  }
+
+  .project-second .proj-image {
+    width: 98%;
+    margin: 10px auto 0;
+    float: none;
+  }
+
+  .project-second, .project-third {
+    padding: 35px 0;
+  }
+
+  .project-third .proj-image {
+    width: 80%;
+    margin: auto;
+  }
+
+  .project-third .middle-image {
+    margin: 7% auto;
+  }
+
+
+
+}
+
+
