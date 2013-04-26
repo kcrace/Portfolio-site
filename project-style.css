@@ -67,6 +67,7 @@ h4 {
   display: inline-block;
 }
 
+/*image sections*/
 .project-main, .project-second, .project-third {
   padding: 48px 0;
 }
@@ -111,8 +112,25 @@ h4 {
 /*like media queries, duh*/
 
 @media screen and (max-width: 764px){
+
+  .project-banner {
+    height: 80px;
+  }
+
+  .title {
+    vertical-align: 13px;
+  }
+
+  .back-arrow {
+    height: 50px;
+  }
+
   h2 {
     font-size: 2.3em;
+  }
+
+  h4 {
+    display: none;
   }
 
   .project-second .proj-title {
@@ -137,28 +155,8 @@ h4 {
 /*iphone*/
 @media screen and (max-width: 480px){
 
-  header .project-banner {
-    height: 80px;
-  }
-
   footer {
   height: 15px;
-  }
-
-  .back-arrow {
-    height: 50px;
-  }
-
-  .title {
-    vertical-align: 13px;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h4 {
-    display: none;
   }
 
   .project-second .proj-image {
@@ -173,9 +171,6 @@ h4 {
   .project-third .middle-image {
     margin: 7% auto;
   }
-
-
-
 }
 
 
