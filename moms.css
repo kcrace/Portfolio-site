@@ -1,0 +1,254 @@
+/*lets have a fresh start*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* { margin: 0; padding: 0; position: relative; text-decoration: none; }
+
+/*I need my clearfix*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+
+/*keep it together*/
+.wrapper{
+  width:100%;
+  max-width: 1040px;
+  margin: auto;
+  background: #FFFFFF;
+}
+
+/*fonts*/
+
+h1 {
+  font-family: "double-pica",serif;
+  color: #2D2D2C;
+  font-size: 6em;
+}
+
+h2{
+  font-family: "double-pica",serif;
+  color: #545454;
+  font-weight: 400;
+  font-size: 2.9em;
+}
+
+h3{
+  font-family: "brandon-grotesque",sans-serif;
+  color: #898981;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6em;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: "double-pica",serif;
+  color: #898981;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 1.4em;
+  font-family: "brandon-grotesque",sans-serif;
+  color: #545454;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+li strong{
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: #9bc6bd;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #CAE0DC;
+}
+
+a:active {
+  color: #33C9FF;
+}
+
+strong {
+  font-style: italic;
+  color: #545454;
+}
+
+
+
+/*header*/
+.color-block {
+  background: #2D2D2C;
+  width: 100%;
+  height: 4em;
+  margin-bottom: 4em;
+}
+
+.title {
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 80%;
+  text-align: center;
+}
+
+.profile {
+  margin: auto;
+  width: 60%;
+  margin-top: -9.5%;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+
+}
+
+.subtitle {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+/*sections*/
+.sample {
+  width: 100%;
+  margin:auto;
+  background: #E9F4F2;
+  overflow: hidden;
+  height: 1%;
+  padding: 0 2% 3% 2%;
+}
+
+.hang-left, .hang-right {
+  width: 7%;
+  display: inline-block;
+  padding: 1%;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.hang-left {
+  vertical-align: top;
+}
+
+.hang-right {
+  vertical-align: bottom;
+}
+
+.quote {
+  width: 83.5%;
+  padding-top: 5%;
+  display: inline-block;
+  height: 1%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.links-left, .links-right {
+  background: #FCFBF5;
+  width: 48%;
+  display: inline-block;
+  height: 1%;
+  overflow: hidden;
+  padding: 10% 6% 3% 6%;
+}
+
+.links-right {
+  background: #FFFFFF;
+}
+
+.left-content, .right-content{
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+/*like media queries, duh*/
+/*ipad portrait*/
+@media screen and (max-width: 764px){
+  .color-block{
+    height: 3.3em;
+    margin-bottom: 3.3em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+/*iphone*/
+@media screen and (max-width: 500px){
+  .color-block{
+    height: 2.3em;
+    margin-bottom: 2.3em;
+  }
+
+  h1 {
+    font-size: 2.9em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p{
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  li {
+    font-size: 1em;
+    margin-bottom: .9em;
+    line-height: 1.2em;
+  }
+
+  li strong{
+    font-size: 1.2em;
+  }
+
+  .sample{
+    padding: 2% 2% 7% 2%;
+  }
+
+  .links-right, .links-left{
+    display:block;
+    width: 100%;
+    padding: 10% 20% 7% 20%;
+  }
+
+
+}

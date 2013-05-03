@@ -1,0 +1,228 @@
+/*lets have a fresh start*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* { margin: 0; padding: 0; position: relative; text-decoration: none; }
+
+/*I need my clearfix*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+
+/*keep it together*/
+.wrapper{
+  width:100%;
+  max-width: 1040px;
+  margin: auto;
+  background: #FFFFFF;
+}
+
+/*fonts*/
+
+h1 {
+  font-family: "chippewa-falls",sans-serif;
+  color: white;
+  font-size: 6em;
+  font-weight: 100;
+  letter-spacing: .02em;
+}
+
+p {
+  font-family: "omnes-pro",sans-serif;
+  color: rgb(162, 162, 162);
+  font-weight: 200;
+  font-size: 2.2em;
+  line-height: 1.3em;
+}
+
+strong{
+  color: #ff316c;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  color: rgb(15, 240, 223);
+  font-weight: 400;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #ff316c;
+}
+
+a:active {
+  color: #606060;
+}
+
+.button a{
+  color:white;
+  font-size: 2em;
+}
+
+.button a:hover{
+  color: #ff316c;
+}
+
+
+
+
+
+/*header*/
+.color-block {
+  background: linear-gradient(#ff316c 49%, transparent 49%),
+    linear-gradient(-45deg, white 33%, transparent 33%) 0 50%,
+    white linear-gradient(45deg, white 33%, #ff316c 33%) 0 50%;
+  background-repeat: repeat-x;
+  background-size: 2px 99%, 40px 40px, 40px 40px;
+  min-height: 100%;
+  width: 100%;
+  height: 22em;
+  margin-bottom: 4em;
+}
+
+.title {
+  margin: auto;
+  margin-top: -38%;
+  margin-bottom: 9%;
+  width: 80%;
+  text-align: center;
+}
+
+.head-pic {
+  text-align: center;
+  width: 75%;
+  margin-top: -9.5%;
+  position: fixed;
+  bottom:0;
+  z-index: 10;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+
+/*sections*/
+section {
+  background: rgba(255,255,255, 0.8);
+  -webkit-box-shadow: 1px 5px 60px rgba(255, 153, 183, 0.57);
+  -moz-box-shadow:    1px 5px 60px rgba(255, 153, 183, 0.57);
+  box-shadow:         1px 5px 60px rgba(255, 153, 183, 0.57);
+  border-radius:          20px; 
+  -moz-border-radius:     20px; 
+  -webkit-border-radius:  20px; 
+  z-index: 20; 
+}
+
+.bio {
+  width: 100%;
+  margin:auto;
+  overflow: hidden;
+  height: 1%;
+  padding: 3% 4.5% 3% 4.5%;
+}
+
+/*social stuff*/
+.social{
+  width: 96%;
+  height: 45px;
+  text-align: right;
+  margin-top: -3%;
+  margin-bottom: 1%;
+  margin-right: 2%;
+}
+
+.button {
+  background: rgb(15, 240, 223);
+  border-radius:          5px; 
+  -moz-border-radius:     5px; 
+  -webkit-border-radius:  5px; 
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 6px;
+}
+
+.tear{
+  width: 40%;
+  z-index: 25;
+}
+
+
+/*like media queries, duh*/
+/*ipad portrait*/
+@media screen and (max-width: 764px){
+  .color-block{
+    height: 3.3em;
+    margin-bottom: 3.3em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+/*iphone*/
+@media screen and (max-width: 500px){
+  .color-block{
+    height: 2.3em;
+    margin-bottom: 2.3em;
+  }
+
+  h1 {
+    font-size: 2.9em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p{
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  li {
+    font-size: 1em;
+    margin-bottom: .9em;
+    line-height: 1.2em;
+  }
+
+  li strong{
+    font-size: 1.2em;
+  }
+
+  .sample{
+    padding: 2% 2% 7% 2%;
+  }
+
+  .links-right, .links-left{
+    display:block;
+    width: 100%;
+    padding: 10% 20% 7% 20%;
+  }
+
+
+}
