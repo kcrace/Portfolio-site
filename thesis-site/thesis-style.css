@@ -1,7 +1,7 @@
 
 h1{
   font-family: "chaparral-pro",sans-serif;
-  font-size: 70%;
+  font-size: 50%;
   text-align: center;
   font-weight: 600;
   color: white;
@@ -11,7 +11,7 @@ h1{
 h2 {
   font-family: "omnes-pro",sans-serif;
   font-weight: 400;
-  font-size: 65%;
+  font-size: 45%;
   text-align: center;
   color: white;
   line-height: 1%;
@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-family: "omnes-pro",sans-serif;
-  font-size: 40%;
+  font-size: 30%;
   font-weight: 500;
   text-align: center;
   width: 65%;
@@ -30,7 +30,7 @@ h3 {
 }
 
 a {
-  color: #316166;
+  color: #a2e0da;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   -moz-transition:all 0.5s ease;
@@ -48,10 +48,10 @@ a:active {
 
 p {
   font-family: "double-pica",serif;
-  font-size: 23%;
+  font-size: 18%;
   text-align: justify;
   line-height: 1.2em;
-  width: 40%;
+  width: 60%;
   white-space: normal;
   margin: 0 auto;
   color: #424242;
@@ -59,7 +59,7 @@ p {
 
 span {
   font-family: "omnes-pro",sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
@@ -124,3 +124,55 @@ img {
 .double img{
   max-width: 40%;
 }
+
+
+/*media at 1100*/
+@media screen and (max-width: 1100px){
+
+  p {
+    width: 60%;
+  }
+}
+
+/*media at 900*/
+@media screen and (max-width: 900px){
+
+  p {
+    font-size: 16%;
+    width: 70%;
+  }
+}
+
+/*media at 600*/
+@media screen and (max-width: 600px){
+
+  h1 {
+    font-size: 35%;
+  }
+
+  h2{
+    font-size: 30%;
+  }
+
+  h3 {
+    font-size: 20%;
+  }
+
+  p{
+    font-size: 15%;
+    width: 80%;
+  }
+
+  .rcL, .rcR{
+    top: 80%;
+  }
+}
+
+/*media at 450*/
+@media screen and (max-width: 450px){
+
+  p {
+    font-size: 13%;
+  }
+
+} 
