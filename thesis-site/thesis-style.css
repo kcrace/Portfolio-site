@@ -1,0 +1,126 @@
+
+h1{
+  font-family: "chaparral-pro",sans-serif;
+  font-size: 70%;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  line-height: 1%;
+}
+
+h2 {
+  font-family: "omnes-pro",sans-serif;
+  font-weight: 400;
+  font-size: 65%;
+  text-align: center;
+  color: white;
+  line-height: 1%;
+}
+
+h3 {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 40%;
+  font-weight: 500;
+  text-align: center;
+  width: 65%;
+  white-space: normal;
+  margin: 0 auto;
+  color: #424242;
+  line-height: 1.2em;
+}
+
+a {
+  color: #316166;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: #424242;
+}
+
+p {
+  font-family: "double-pica",serif;
+  font-size: 23%;
+  text-align: justify;
+  line-height: 1.2em;
+  width: 40%;
+  white-space: normal;
+  margin: 0 auto;
+  color: #424242;
+}
+
+span {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 30px;
+}
+
+
+.text-middle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  background: rgba(160, 151, 136, .8)
+}
+
+.text-contain {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.one-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.image-container {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+  max-width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+.double img{
+  max-width: 40%;
+}
