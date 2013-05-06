@@ -249,6 +249,13 @@ img{
     width: 100%;
     padding: 10% 20% 7% 20%;
   }
+}
 
-
+@media screen and (max-width: 350px){
+  .sample{
+    padding: 2% 1% 7% 1%;
+  }
+  .quote{
+    width: 82.5%;
+  }
 }
